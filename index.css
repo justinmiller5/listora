@@ -1,24 +1,49 @@
+/* === General Page Styles === */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #000D1F;
   color: #333;
   text-align: center;
   padding: 50px;
   margin: 0;
 }
 
-h1 {
-  color: #2c3e50;
-  font-size: 3rem;
-  margin-bottom: 20px;
+/* === Header Layout === */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-p {
-  font-size: 18px;
-  margin-bottom: 40px;
+/* === Enlarged Logo === */
+.logo-small {
+  width: 87.5px; /* Increased by 25% from 70px */
+  height: auto;
+  margin-right: 10px;
 }
 
-/* === Universal Button Style === */
+/* === Brand Text Styling (Reduced by 25%) === */
+.brand-text {
+  display: flex;
+  align-items: flex-end;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.large-letter {
+  font-size: 52.5px; /* 25% smaller than 70px */
+  line-height: 1;
+}
+
+.small-letter {
+  font-size: 42px; /* 25% smaller than 56px */
+  line-height: 1;
+}
+
+/* === Button Group === */
 .btn {
   background-color: #3498db;
   color: white;
@@ -28,36 +53,23 @@ p {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 200px;         /* consistent width */
-  margin: 0 auto;        /* center horizontally */
+  width: 200px;
+  margin: 0 auto;
 }
 
 .btn:hover {
   background-color: #2980b9;
 }
 
-/* === Stacked Button Layout === */
 .button-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* spacing between buttons */
+  gap: 15px;
   margin-top: 30px;
 }
 
-/* === Logo === */
-.logo {
-  width: 280px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* === Main Content Container === */
+/* === Translucent Main Container === */
 .container {
-  max-width: 600px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: rgba(0, 13, 31, 0.8);
 }
